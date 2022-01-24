@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+.container {
+  min-height: inherit;
+  background: url("../images/countowntimer.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.heading {
+  /* margin-top: -5rem; */
+  /* margin-bottom: 5rem; */
+  padding: 2rem;
+  text-align: center;
+}
+.heading h1 {
+  font-size: 4.2rem;
+  text-transform: capitalize;
+  color: white;
+  text-shadow: -2px 0px 30px rgba(0, 0, 0, 1);
+  font-weight: 500;
+}
+
+.countdown-timer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 50vw;
+  padding: 2rem;
+}
+.timer {
+  color: #ffffff;
+  text-align: center;
+  margin: 2rem;
+}
+h3 {
+  letter-spacing: 2px;
+  font-weight: 300;
+  margin: 0 2rem;
+  font-size: 3.2rem;
+}
+.sm {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 400;
+}
