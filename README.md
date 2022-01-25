@@ -9,3 +9,7 @@ So far, in this challenges I have learn :-
 ⨀ Responsive design
 
 ⨀ Local Storage
+
+⨀ Dynamically adding HTML element
+
+⨀ Fetching API
