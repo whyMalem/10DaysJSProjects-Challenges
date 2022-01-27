@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-color: whitesmoke;
+  width: 36rem;
+  padding: 1%;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.17);
+  border-radius: 12px;
+}
+
+.password-section {
+  display: flex;
+  padding: 1rem;
+  position: relative;
+  border: 1px solid black;
+  /* background-color: darkcyan; */
+}
+.password-section span {
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.password-section button {
+  position: absolute;
+  top: -1rem;
+  right: 0;
+  background-color: black;
+  color: whitesmoke;
+  border: 1px solid black;
+  outline: none;
+  padding: 0.5rem;
+  cursor: pointer;
+  opacity: 0;
+  transform: translate(0, 10%);
+  transition: all 0.3s ease;
+}
+.password-section:hover button {
+  opacity: 1;
+  transform: translate(0, 0%);
+}
+
+.body {
+  padding: 1rem;
+  margin: 1rem 0;
+}
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  font-size: 1.3rem;
+}
+.form-control label,
+.form-control input {
+  cursor: pointer;
+}
+.form-control #len {
+  padding: 0 1px;
+}
+.generate {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  background-color: black;
+  color: aliceblue;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.generate:hover {
+  background-color: #eaeaea;
+  color: black;
+}
