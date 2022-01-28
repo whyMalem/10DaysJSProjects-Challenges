@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-10/css/all.min.css"
+      integrity="sha512-Pv1WJMqAtVgNNct5vhq+4cgkKinKpV1jCwSWD4am9CjwxsJSCkLWKcE/ZBqHnEE1mHs01c8B0GMvcn/pQ/yrog=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="app.js" defer></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <h1>Weather Forecast</h1>
+    <p class="small-text">
+      Check the weather forecast for any city in the world
+    </p>
+
+    <div class="container">
+      <form class="form" id="form">
+        <input type="text" class="search" placeholder="Enter any city name" />
+        <button class="btn">Search</button>
+      </form>
+      <h3 class="error hidden">Oops!! Something went wrong</h3>
+      <div class="output hidden">
+        <h3 class="city-name">Silchar</h3>
+        <div>
+          <h2 class="temp">23°C</h2>
+          <span class="temp-status"><i class="fas fa-cloud"></i></span>
+        </div>
+
+        <p class="feels_like small-text">Feels Like : 22°C</p>
+        <p class="humidity small-text">Humidity : 30</p>
+      </div>
+    </div>
+  </body>
+</html>

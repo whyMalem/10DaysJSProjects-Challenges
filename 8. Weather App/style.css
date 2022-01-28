@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  font-size: 4rem;
+  letter-spacing: 2px;
+  color: mediumpurple;
+  opacity: 0.5;
+}
+.small-text {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+.container {
+  margin: 5rem;
+  width: 33rem;
+  /* background: cyan; */
+  padding: 2rem;
+}
+.form {
+  display: flex;
+  margin-bottom: 3rem;
+}
+.search {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+  border: 1px solid transparent;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.search:hover,
+.search:focus,
+.search:focus-within {
+  border-bottom: 1px solid #000;
+}
+.btn {
+  background: mediumpurple;
+  color: whitesmoke;
+  border: 1px solid mediumpurple;
+  outline: none;
+  cursor: pointer;
+  padding: 0 0.5rem;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background: white;
+  color: mediumpurple;
+  font-weight: 500;
+}
+.output {
+  padding: 1rem 0.5rem;
+  margin: 1rem 0;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.14);
+  background-color: whitesmoke;
+}
+.output.hidden {
+  display: none;
+}
+.output .city-name {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.output div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  font-size: 2rem;
+  color: mediumpurple;
+}
+.output div .temp-status {
+  font-size: 3rem;
+}
+.error.hidden {
+  display: none;
+}
