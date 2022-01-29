@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 62rem;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin: 5rem;
+  /* transition: all 1s ease; */
+}
+.header {
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  /* background-color: rgb(235, 224, 224); */
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.header .logo {
+  color: mediumpurple;
+  font-size: 2.5rem;
+}
+.header .logo-text {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  letter-spacing: 1px;
+}
+.msg {
+  transition: all 1s ease;
+}
+.msg .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: whitesmoke;
+  font-size: 1.6rem;
+}
+.msg .heading .btn {
+  font-size: 1.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.msg .heading,
+.inner .inner-text {
+  padding: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.inner.hide {
+  display: none;
+  transition: all 1s ease;
+}
+.inner.show {
+  display: block;
+  transition: all 1s ease;
+}
+.inner .inner-text {
+  font-size: 1.4rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
