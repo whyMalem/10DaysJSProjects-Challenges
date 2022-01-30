@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 5rem 0;
+  width: 62rem;
+  background-color: whitesmoke;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+}
+
+.header {
+  background-color: white;
+  padding: 1rem 2rem;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header .logo {
+  color: orange;
+  font-size: 3.5rem;
+  letter-spacing: 2px;
+}
+.header .search-box {
+  width: 45%;
+}
+.header .search-box .search {
+  width: 90%;
+  padding: 0.5rem;
+  font-size: 1.6rem;
+}
+.header .search-box .search-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.header .search-box .search-btn:hover {
+  color: orange;
+}
+.fav-container {
+  padding: 1rem 2rem;
+}
+.fav-container h3 {
+  font-size: 2rem;
+}
+.fav-meals {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+}
+.fav-meals li {
+  width: 75px;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+}
+.fav-meals li .close-btn {
+  position: absolute;
+  top: -1rem;
+  right: 0rem;
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: none;
+}
+.fav-meals li:hover .close-btn {
+  display: inline-block;
+}
+.fav-meals li .close-btn:hover {
+  color: red;
+}
+.fav-meals li img {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid orange;
+}
+.fav-meals li span {
+  display: inline-block;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* width: 75px; */
+  width: inherit;
+}
+
+.meals {
+  /* padding: 2rem; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.meal {
+  border-radius: 6px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  width: 90%;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+.meal .meal-header {
+  position: relative;
+}
+.meal .meal-header .random {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  background: orange;
+  border: none;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-size: 1.6rem;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.meal .meal-header img {
+  width: 100%;
+  height: 36rem;
+  object-fit: cover;
+}
+.meal .meal-body {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.meal .meal-body h4 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.meal .meal-body .fav-btn {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.meal .meal-body .fav-btn.active {
+  color: orange;
+}
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.popup-container.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.popup {
+  background-color: white;
+  border-radius: 6px;
+  padding: 0 2rem;
+  position: relative;
+  overflow: auto;
+  max-width: 60rem;
+  max-height: 90vh;
+  width: 100%;
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  /* margin: 5rem 0; */
+}
+.popup .header h3 {
+  font-size: 2rem;
+}
+.meal-info img {
+  width: 100%;
+  height: 36rem;
+  object-fit: cover;
+  margin: 2rem 0;
+}
+.meal-info h1 {
+  margin-top: 1rem;
+  color: orange;
+  font-size: 2rem;
+}
+.meal-info h3 {
+  color: orange;
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+.popup .header .close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+.popup .header .close-btn:hover {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+}
