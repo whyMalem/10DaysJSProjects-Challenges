@@ -55,8 +55,6 @@ searchBtn.addEventListener("click", async () => {
 });
 
 function addMeal(mealData, random = false) {
-  //   console.log(mealData);
-  //   console.log(mealData.meals[0].strMealThumb);
   const meal = document.createElement("div");
   meal.classList.add("meal");
 
@@ -100,7 +98,7 @@ function addMeal(mealData, random = false) {
 }
 
 function addLS(mealId) {
-  console.log(mealId);
+  // console.log(mealId);
   const mealsId = getMealsLS();
   localStorage.setItem("mealIds", JSON.stringify([...mealsId, mealId]));
 }
